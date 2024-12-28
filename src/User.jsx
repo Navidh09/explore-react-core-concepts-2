@@ -1,8 +1,11 @@
-export default function Friend(){
+import "./user.css"
+
+export default function User({user}){
+    const {name,email}=user;
     return(
-        <div>
-            <h4>Name: </h4>
-            <p>Email: </p>
+        <div className="body">
+            <h4>Name: {name} </h4>
+            <p>Email: {email} </p>
         </div>
     )
 }
